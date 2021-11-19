@@ -1,5 +1,4 @@
 import React from "react";
-import { Expense } from "../interfaces/Expence";
 import RenderDate from "./RenderDate";
 
 export interface ExpenseProps {

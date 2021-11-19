@@ -1,6 +1,5 @@
 .expense-item {
-   width: 80%;
-   margin: 2rem auto;
+   margin: 1rem auto;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -9,7 +8,7 @@
    box-shadow: 0 .5rem 1rem rgba($color: #000000, $alpha: .25);
    background-color: #4b4b4b;
    color: #000000;
-   font-size: 2rem;
+   font-size: 1.1rem;
 
    &__description {
       margin-left: 2rem;
@@ -28,10 +27,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 1.5rem 3rem;
-      font-size: 2rem;
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
       font-weight: bold;
-      border-radius: 2rem;
+      border-radius: 1rem;
       border: .2rem solid white;
       color: white;
       background-color: #40005d;

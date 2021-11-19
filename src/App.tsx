@@ -1,6 +1,6 @@
 import React from 'react';
-import ExpenseItem from './components/ExpenseItem';
 import { Expense } from './interfaces/Expence';
+import Expenses from './sass/components/Expenses';
 
 function App() {
   const expenses: Expense[] = [
@@ -11,11 +11,7 @@ function App() {
   ]
   return (
     <div>
-      {
-        expenses && expenses.map(
-          ({id, title, amount, date}) => <ExpenseItem key={id} title={title} amount={amount} date={date}/>
-        )
-      }
+      <Expenses expenses={expenses}/>
     </div>
   );
 }
