@@ -1,6 +1,7 @@
 @import './variables';
 @import './base';
 
-@import './components/ExpenseItem.scss';
-@import './components/RenderDate.scss';
-@import './components/Expenses.scss';
+@import './components/Expenses/ExpenseItem.scss';
+@import './components/Expenses/RenderDate.scss';
+@import './components/Expenses/Expenses.scss';
+@import './components/UI/Card.scss';

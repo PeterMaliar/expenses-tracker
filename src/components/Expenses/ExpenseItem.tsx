@@ -1,4 +1,4 @@
-import React from "react";
+import Card from "../UI/Card";
 import RenderDate from "./RenderDate";
 
 export interface ExpenseProps {
@@ -9,13 +9,13 @@ export interface ExpenseProps {
 
 const ExpenseItem = ({title, amount, date}:ExpenseProps): JSX.Element => {
 	return (
-		<div className="expense-item">
+		<Card theme="light" className="expense-item">
             <RenderDate date={date}/>
 			<div className="expense-item__description">
 				<h2>{title}</h2>
 				<div className="expense-item__price">${amount}</div>
 			</div>
-		</div>
+		</Card>
 	);
 };
 

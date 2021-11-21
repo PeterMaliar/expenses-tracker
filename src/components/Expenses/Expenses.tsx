@@ -1,6 +1,7 @@
 import React from 'react';
-import ExpenseItem from '../../components/ExpenseItem';
+import ExpenseItem from './ExpenseItem';
 import { Expense } from '../../interfaces/Expence';
+import Card from '../UI/Card';
 
 interface ExpensesProps {
    expenses: Expense[]
@@ -8,7 +9,7 @@ interface ExpensesProps {
 
 const Expenses = ({expenses}: ExpensesProps): JSX.Element => {
    return (
-      <div className="expenses">
+      <Card theme="dark" className="expenses">
          {
             expenses && expenses.map(
                ({id, title, amount, date}) => (
@@ -16,7 +17,7 @@ const Expenses = ({expenses}: ExpensesProps): JSX.Element => {
                )
             )
          }         
-      </div>
+      </Card>
    )
 }
 

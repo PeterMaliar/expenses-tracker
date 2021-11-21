@@ -1,6 +1,6 @@
 import React from 'react';
 import { Expense } from './interfaces/Expence';
-import Expenses from './sass/components/Expenses';
+import Expenses from './components/Expenses/Expenses';
 
 function App() {
   const expenses: Expense[] = [
@@ -11,7 +11,7 @@ function App() {
   ]
   return (
     <div>
-      <Expenses expenses={expenses}/>
+        <Expenses expenses={expenses}/>
     </div>
   );
 }

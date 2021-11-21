@@ -1,0 +1,11 @@
+.card {
+   padding: 1rem;
+   border-radius: 1rem;
+   box-shadow: 0 .5rem 1rem rgba($color: #000000, $alpha: .25);
+}
+.card--light {
+   background-color: #4b4b4b;  
+}
+.card--dark {
+   background-color: rgb(31,31,31);
+}
